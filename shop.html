@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitosoy - Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 1rem 3rem rgba(0,0,0,.08)!important; }
+        .btn-scale { transition: transform 0.2s ease; }
+        .btn-scale:hover { transform: scale(1.02); }
+        .bg-glass { background: rgba(255, 255, 255, 0.85)!important; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .product-img { height: 350px; transition: transform 0.5s ease; padding: 2rem; }
+        .card:hover .product-img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-light text-dark d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm bg-glass border-bottom border-light">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="index.html">
+                <i class="bi bi-cup-straw text-success me-2"></i>Vitosoy
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="process.html">Process</a></li>
+                    <li class="nav-item"><a class="nav-link" href="showdown.html">Showdown</a></li>
+                    <li class="nav-item"><a class="nav-link active text-success" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center py-5 bg-white border-bottom">
+        <div class="container py-4">
+            <h1 class="display-3 fw-bold mt-3 mb-3" style="letter-spacing: -2px;">Shop Vitosoy</h1>
+            <p class="lead text-muted mx-auto mb-0" style="max-width: 600px;">Stock up on your favorite high-protein flavors. Delivered fresh to your door.</p>
+        </div>
+    </header>
+
+    <section class="py-5 mb-5 flex-grow-1">
+        <div class="container">
+            <div class="d-flex justify-content-center gap-2 mb-5">
+                <button class="btn btn-dark rounded-pill px-4 fw-bold">All</button>
+                <button class="btn btn-outline-dark rounded-pill px-4 fw-bold">Classics</button>
+                <button class="btn btn-outline-dark rounded-pill px-4 fw-bold">Active</button>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-12 col-md-6">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden bg-white">
+                        <div class="overflow-hidden bg-light position-relative">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1 px-3 py-2 rounded-pill">In Stock</span>
+                            <img src="img/classic.jpg" class="w-100 object-fit-contain product-img" alt="Vitosoy Milk Classic">
+                        </div>
+                        <div class="card-body p-4 p-md-5 d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <h3 class="card-title fw-bold mb-0">Classic</h3>
+                                <h4 class="text-success fw-bold mb-0">1800 Ks</h4>
+                            </div>
+                            <span class="text-muted small mb-3">180ml</span>
+                            <p class="text-muted mb-4">Standard original soy milk drink.</p>
+                            <a href="checkout.html" class="btn btn-dark btn-lg rounded-pill w-100 mt-auto btn-scale fw-bold">
+                                <i class="bi bi-cart-plus me-2"></i> Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden bg-white">
+                        <div class="overflow-hidden bg-light position-relative">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1 px-3 py-2 rounded-pill">In Stock</span>
+                            <img src="img/straw.jpg" class="w-100 object-fit-contain product-img" alt="Vitosoy Milk Strawberry">
+                        </div>
+                        <div class="card-body p-4 p-md-5 d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <h3 class="card-title fw-bold mb-0">Strawberry</h3>
+                                <h4 class="text-success fw-bold mb-0">1800 Ks</h4>
+                            </div>
+                            <span class="text-muted small mb-3">180ml</span>
+                            <p class="text-muted mb-4">Strawberry-flavored soy milk beverage.</p>
+                            <a href="checkout.html" class="btn btn-dark btn-lg rounded-pill w-100 mt-auto btn-scale fw-bold">
+                                <i class="bi bi-cart-plus me-2"></i> Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden bg-white">
+                        <div class="overflow-hidden bg-light position-relative">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1 px-3 py-2 rounded-pill">In Stock</span>
+                            <img src="img/chocolatte.jpg" class="w-100 object-fit-contain product-img" alt="Vitosoy Milk Chocolate">
+                        </div>
+                        <div class="card-body p-4 p-md-5 d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <h3 class="card-title fw-bold mb-0">Chocolate</h3>
+                                <h4 class="text-success fw-bold mb-0">1800 Ks</h4>
+                            </div>
+                            <span class="text-muted small mb-3">180ml</span>
+                            <p class="text-muted mb-4">Chocolate-flavored soy milk drink.</p>
+                            <a href="checkout.html" class="btn btn-dark btn-lg rounded-pill w-100 mt-auto btn-scale fw-bold">
+                                <i class="bi bi-cart-plus me-2"></i> Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden bg-white">
+                        <div class="overflow-hidden bg-light position-relative">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1 px-3 py-2 rounded-pill">In Stock</span>
+                            <img src="img/activeblue.jpg" class="w-100 object-fit-contain product-img" alt="Vitosoy Active Soy Milk Blue">
+                        </div>
+                        <div class="card-body p-4 p-md-5 d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <h3 class="card-title fw-bold mb-0">Active Blue</h3>
+                                <h4 class="text-success fw-bold mb-0">7200 Ks</h4>
+                            </div>
+                            <span class="text-muted small mb-3">1000ml (Reduced Sugar)</span>
+                            <p class="text-muted mb-4">Reduced sugar soy milk with balanced nutrition and lower sweetness.</p>
+                            <a href="checkout.html" class="btn btn-dark btn-lg rounded-pill w-100 mt-auto btn-scale fw-bold">
+                                <i class="bi bi-cart-plus me-2"></i> Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden bg-white">
+                        <div class="overflow-hidden bg-light position-relative">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1 px-3 py-2 rounded-pill">In Stock</span>
+                            <img src="img/activegreen.jpg" class="w-100 object-fit-contain product-img" alt="Vitosoy Active Soy Milk Green">
+                        </div>
+                        <div class="card-body p-4 p-md-5 d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <h3 class="card-title fw-bold mb-0">Active Green</h3>
+                                <h4 class="text-success fw-bold mb-0">7200 Ks</h4>
+                            </div>
+                            <span class="text-muted small mb-3">1000ml (No Sugar)</span>
+                            <p class="text-muted mb-4">Unsweetened soy milk with no added sugar and about 8g protein per 200ml.</p>
+                            <a href="checkout.html" class="btn btn-dark btn-lg rounded-pill w-100 mt-auto btn-scale fw-bold">
+                                <i class="bi bi-cart-plus me-2"></i> Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-center py-5 mt-auto border-top">
+        <div class="container">
+            <h4 class="fw-bold mb-3"><i class="bi bi-cup-straw text-success me-2"></i>Vitosoy</h4>
+            <p class="mb-0 text-muted small">&copy; 2026 Vitosoy. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

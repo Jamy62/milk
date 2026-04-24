@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitosoy - The Original Soy Milk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 1rem 3rem rgba(0,0,0,.08)!important; }
+        .btn-scale { transition: transform 0.2s ease; }
+        .btn-scale:hover { transform: scale(1.05); }
+        .bg-glass { background: rgba(255, 255, 255, 0.85)!important; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    </style>
+</head>
+<body class="bg-white text-dark d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm bg-glass border-bottom border-light">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="index.html">
+                <i class="bi bi-cup-straw text-success me-2"></i>Vitosoy
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium">
+                    <li class="nav-item"><a class="nav-link active text-success" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="process.html">Process</a></li>
+                    <li class="nav-item"><a class="nav-link" href="showdown.html">Showdown</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="position-relative d-flex align-items-center min-vh-100 py-5 overflow-hidden">
+        <img src="img/vitosoy2000bgrm.png" alt="" class="position-absolute top-50 start-50 translate-middle" style="z-index: -1; min-width: 100%; min-height: 100%; object-fit: cover; opacity: 0.15; filter: blur(2px);">
+        
+        <div class="container text-center position-relative">
+            <h1 class="display-1 fw-bold mb-4" style="letter-spacing: -2px;">The Original<br>Soy Milk.</h1>
+            <p class="lead text-muted mb-5 mx-auto" style="max-width: 600px;">Experience the timeless, plant-powered refreshment that has been nourishing generations. Pure, delicious, and nutritious.</p>
+            <a href="shop.html" class="btn btn-dark btn-lg rounded-pill px-5 py-3 shadow-sm btn-scale fw-bold">Shop Now <i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white position-relative" style="z-index: 1;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 text-center p-5 h-100 hover-lift bg-light bg-opacity-50">
+                        <i class="bi bi-tree text-success mb-3" style="font-size: 2.5rem;"></i>
+                        <h3 class="fw-bold mb-3">Plant-Based</h3>
+                        <p class="text-muted mb-0">A pure, plant-powered drink that respects your body and the environment.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 text-center p-5 h-100 hover-lift bg-light bg-opacity-50">
+                        <i class="bi bi-droplet text-dark mb-3" style="font-size: 2.5rem;"></i>
+                        <h3 class="fw-bold mb-3">Silky Smooth</h3>
+                        <p class="text-muted mb-0">Crafted with a meticulous filtering process to ensure the perfect, creamy texture.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 text-center p-5 h-100 hover-lift bg-light bg-opacity-50">
+                        <i class="bi bi-shield-check text-primary mb-3" style="font-size: 2.5rem;"></i>
+                        <h3 class="fw-bold mb-3">Nutritious</h3>
+                        <p class="text-muted mb-0">High-protein, non-GMO soy standards tailored for a healthy lifestyle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-5">
+                <h2 class="fw-bold mb-3 mb-md-0 display-6" style="letter-spacing: -1px;">Featured Flavors</h2>
+                <a href="shop.html" class="btn btn-outline-dark rounded-pill px-4 fw-bold btn-scale">Shop All <i class="bi bi-grid ms-1"></i></a>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden">
+                        <img src="img/classic.jpg" class="w-60 object-fit-cover bg-secondary bg-opacity-10" style="height: 220px; transition: transform 0.5s;" alt="Classic" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title fw-bold mb-1">Classic (180ml)</h5>
+                            <p class="text-success fw-bold small mb-0">1800 Ks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden">
+                        <img src="img/straw.jpg" class="w-60 object-fit-cover bg-secondary bg-opacity-10" style="height: 220px; transition: transform 0.5s;" alt="Strawberry" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title fw-bold mb-1">Strawberry (180ml)</h5>
+                            <p class="text-success fw-bold small mb-0">1800 Ks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden">
+                        <img src="img/chocolatte.jpg" class="w-100 object-fit-cover bg-secondary bg-opacity-10" style="height: 220px; transition: transform 0.5s;" alt="Chocolate" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title fw-bold mb-1">Chocolate (180ml)</h5>
+                            <p class="text-success fw-bold small mb-0">1800 Ks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden">
+                        <img src="img/activeblue.jpg" class="w-10 object-fit-cover bg-secondary bg-opacity-10" style="height: 220px; transition: transform 0.5s;" alt="Active Blue" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title fw-bold mb-1">Active Blue (1000ml)</h5>
+                            <p class="text-success fw-bold small mb-0">7200 Ks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="card border-0 shadow-lg rounded-4 p-5 bg-dark text-white text-center position-relative overflow-hidden" style="background: linear-gradient(135deg, #212529 0%, #343a40 100%);">
+                <i class="bi bi-info-circle position-absolute text-white opacity-10" style="font-size: 12rem; top: 30px; left: 70px;"></i>
+                <div class="position-relative z-1">
+                    <h2 class="fw-bold mb-4 display-6" style="letter-spacing: -1px;">Did you know?</h2>
+                    <p class="lead mb-5 mx-auto text-light opacity-75" style="max-width: 700px;">Vitosoy is crafted using a meticulous process that extracts the purest nutrition from premium soybeans, ensuring every drop is packed with plant-based goodness.</p>
+                    <a href="process.html" class="btn btn-light btn-lg rounded-pill px-5 fw-bold btn-scale shadow">See How It's Made <i class="bi bi-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light text-center py-5 mt-auto border-top">
+        <div class="container">
+            <h4 class="fw-bold mb-3"><i class="bi bi-cup-straw text-success me-2"></i>Vitosoy</h4>
+            <p class="mb-0 text-muted small">&copy; 2026 Vitosoy. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

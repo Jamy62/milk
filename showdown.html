@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitosoy - The Showdown: Soy vs. Dairy</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .bg-glass { background: rgba(255, 255, 255, 0.85)!important; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 1rem 3rem rgba(0,0,0,.08)!important; }
+
+        .metric-badge {
+            width: 140px;
+            font-size: 0.75rem;
+            white-space: normal;
+        }
+        
+        @media (min-width: 768px) {
+            .metric-badge { width: auto; font-size: 0.875em; white-space: nowrap; }
+        }
+    </style>
+</head>
+<body class="bg-light text-dark d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm bg-glass border-bottom border-light">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="index.html">
+                <i class="bi bi-cup-straw text-success me-2"></i>Vitosoy
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="process.html">Process</a></li>
+                    <li class="nav-item"><a class="nav-link active text-success" href="showdown.html">Showdown</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-center py-5 bg-white border-bottom">
+        <div class="container py-4">
+            <h1 class="display-3 fw-bold mt-3 mb-3" style="letter-spacing: -2px;">The Showdown</h1>
+            <p class="lead text-muted mx-auto mb-0" style="max-width: 600px;">See how the original soy milk stacks up against traditional dairy. The numbers don't lie.</p>
+        </div>
+    </header>
+
+    <!-- The Data -->
+    <section class="py-5 mb-5 flex-grow-1">
+        <div class="container">
+            <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 bg-white">
+                
+                <!-- Top Images -->
+                <div class="row text-center align-items-end mb-5 pb-3 border-bottom">
+                    <div class="col-6">
+                        <div class="hover-lift d-inline-block w-100">
+                            <h3 class="fw-bold text-success mb-4 display-6">Soy Milk</h3>
+                            <img src="img/soymilk.jpg" alt="Soy Milk" class="img-fluid rounded-4 shadow-sm bg-light" style="height: 300px; width: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="hover-lift d-inline-block w-100">
+                            <h3 class="fw-bold text-secondary mb-4 display-6">Dairy Milk</h3>
+                            <img src="img/cowmilk.png" alt="Dairy Milk" class="img-fluid rounded-4 shadow-sm bg-light" style="height: 300px; width: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Metrics & Bars -->
+                <div class="px-md-4">
+                    <h4 class="text-center fw-bold mb-4 text-muted border-bottom pb-2">General Info (per 1 cup)</h4>
+                    
+                    <!-- Calories -->
+                    <div class="row align-items-center mb-3">
+                        <div class="col-4 col-md-5 text-end"><span class="fw-bold text-success fs-5">105</span></div>
+                        <div class="col-4 col-md-2 text-center px-0">
+                            <span class="fw-bold text-dark text-uppercase tracking-wide px-3 py-1 bg-light rounded-pill border d-inline-block metric-badge">Calories</span>
+                        </div>
+                        <div class="col-4 col-md-5 text-start"><span class="fw-bold text-muted fs-5">122</span></div>
+                    </div>
+                    
+                    <!-- Weight -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-md-5 text-end"><span class="fw-bold text-success fs-5">244g</span></div>
+                        <div class="col-4 col-md-2 text-center px-0">
+                            <span class="fw-bold text-dark text-uppercase tracking-wide px-3 py-1 bg-light rounded-pill border d-inline-block metric-badge">Weight</span>
+                        </div>
+                        <div class="col-4 col-md-5 text-start"><span class="fw-bold text-muted fs-5">244g</span></div>
+                    </div>
+
+                    <h4 class="text-center fw-bold mb-4 text-muted border-bottom pb-2">Macronutrients</h4>
+
+                    <!-- Carbohydrates -->
+                    <div class="row align-items-center mb-3">
+                        <div class="col-4 col-md-5 text-end"><span class="fw-bold text-success fs-5">12g <small class="text-muted">(5%)</small></span></div>
+                        <div class="col-4 col-md-2 text-center px-0">
+                            <span class="fw-bold text-dark text-uppercase tracking-wide px-3 py-1 bg-light rounded-pill border d-inline-block metric-badge">Carbs</span>
+                        </div>
+                        <div class="col-4 col-md-5 text-start"><span class="fw-bold text-muted fs-5">12g <small class="text-muted">(5%)</small></span></div>
+                    </div>
+                    
+                    <!-- Total Fat -->
+                    <div class="row align-items-center mb-3">
+                        <div class="col-4 col-md-5 text-end"><span class="fw-bold text-success fs-5">3.6g <small class="text-muted">(6%)</small></span></div>
+                        <div class="col-4 col-md-2 text-center px-0">
+                            <span class="fw-bold text-dark text-uppercase tracking-wide px-3 py-1 bg-light rounded-pill border d-inline-block metric-badge">Total Fat</span>
+                        </div>
+                        <div class="col-4 col-md-5 text-start"><span class="fw-bold text-muted fs-5">4.8g <small class="text-muted">(8%)</small></span></div>
+                    </div>
+                    
+                    <!-- Protein -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-md-5 text-end"><span class="fw-bold text-success fs-5">6.3g <small class="text-muted">(13%)</small></span></div>
+                        <div class="col-4 col-md-2 text-center px-0">
+                            <span class="fw-bold text-dark text-uppercase tracking-wide px-3 py-1 bg-light rounded-pill border d-inline-block metric-badge">Protein</span>
+                        </div>
+                        <div class="col-4 col-md-5 text-start"><span class="fw-bold text-muted fs-5">8.1g <small class="text-muted">(16%)</small></span></div>
+                    </div>
+
+                    <h4 class="text-center fw-bold mb-4 text-muted border-bottom pb-2">Vitamins & Minerals</h4>
+
+                    <!-- Vitamin A -->
+                    <div class="row align-items-center mb-3">
+                        <div class="col-4 col-md-5 text-end"><span class="fw-bold text-success fs-5">134ug <small class="text-muted">(19%)</small></span></div>
+                        <div class="col-4 col-md-2 text-center px-0">
+                            <span class="fw-bold text-dark text-uppercase tracking-wide px-3 py-1 bg-light rounded-pill border d-inline-block metric-badge">Vitamin A</span>
+                        </div>
+                        <div class="col-4 col-md-5 text-start"><span class="fw-bold text-muted fs-5">134ug <small class="text-muted">(19%)</small></span></div>
+                    </div>
+                    
+                    <!-- Vitamin D -->
+                    <div class="row align-items-center mb-3">
+                        <div class="col-4 col-md-5 text-end"><span class="fw-bold text-success fs-5">-</span></div>
+                        <div class="col-4 col-md-2 text-center px-0">
+                            <span class="fw-bold text-dark text-uppercase tracking-wide px-3 py-1 bg-light rounded-pill border d-inline-block metric-badge">Vitamin D</span>
+                        </div>
+                        <div class="col-4 col-md-5 text-start"><span class="fw-bold text-muted fs-5">120iu <small class="text-muted">(24%)</small></span></div>
+                    </div>
+                    
+                    <!-- Calcium -->
+                    <div class="row align-items-center mb-3">
+                        <div class="col-4 col-md-5 text-end"><span class="fw-bold text-success fs-5">300mg <small class="text-muted">(30%)</small></span></div>
+                        <div class="col-4 col-md-2 text-center px-0">
+                            <span class="fw-bold text-dark text-uppercase tracking-wide px-3 py-1 bg-light rounded-pill border d-inline-block metric-badge">Calcium</span>
+                        </div>
+                        <div class="col-4 col-md-5 text-start"><span class="fw-bold text-muted fs-5">293mg <small class="text-muted">(29%)</small></span></div>
+                    </div>
+                    
+                    <!-- Magnesium -->
+                    <div class="row align-items-center mb-3">
+                        <div class="col-4 col-md-5 text-end"><span class="fw-bold text-success fs-5">37mg <small class="text-muted">(12%)</small></span></div>
+                        <div class="col-4 col-md-2 text-center px-0">
+                            <span class="fw-bold text-dark text-uppercase tracking-wide px-3 py-1 bg-light rounded-pill border d-inline-block metric-badge">Magnesium</span>
+                        </div>
+                        <div class="col-4 col-md-5 text-start"><span class="fw-bold text-muted fs-5">27mg <small class="text-muted">(9%)</small></span></div>
+                    </div>
+                    
+                    <!-- Potassium -->
+                    <div class="row align-items-center mb-3">
+                        <div class="col-4 col-md-5 text-end"><span class="fw-bold text-success fs-5">298mg <small class="text-muted">(13%)</small></span></div>
+                        <div class="col-4 col-md-2 text-center px-0">
+                            <span class="fw-bold text-dark text-uppercase tracking-wide px-3 py-1 bg-light rounded-pill border d-inline-block metric-badge">Potassium</span>
+                        </div>
+                        <div class="col-4 col-md-5 text-start"><span class="fw-bold text-muted fs-5">342mg <small class="text-muted">(15%)</small></span></div>
+                    </div>
+                    
+                    <!-- Riboflavin (B2) -->
+                    <div class="row align-items-center mb-3">
+                        <div class="col-4 col-md-5 text-end"><span class="fw-bold text-success fs-5">0.5mg <small class="text-muted">(41%)</small></span></div>
+                        <div class="col-4 col-md-2 text-center px-0">
+                            <span class="fw-bold text-dark text-uppercase tracking-wide px-3 py-1 bg-light rounded-pill border d-inline-block metric-badge">Riboflavin (B2)</span>
+                        </div>
+                        <div class="col-4 col-md-5 text-start"><span class="fw-bold text-muted fs-5">0.5mg <small class="text-muted">(41%)</small></span></div>
+                    </div>
+                    
+                    <!-- Pantothenic Acid (B5) -->
+                    <div class="row align-items-center mb-3">
+                        <div class="col-4 col-md-5 text-end"><span class="fw-bold text-success fs-5">-</span></div>
+                        <div class="col-4 col-md-2 text-center px-0">
+                            <span class="fw-bold text-dark text-uppercase tracking-wide px-3 py-1 bg-light rounded-pill border d-inline-block metric-badge">Pantothenic (B5)</span>
+                        </div>
+                        <div class="col-4 col-md-5 text-start"><span class="fw-bold text-muted fs-5">0.9mg <small class="text-muted">(17%)</small></span></div>
+                    </div>
+                    
+                    <!-- Vitamin B12 -->
+                    <div class="row align-items-center mb-3">
+                        <div class="col-4 col-md-5 text-end"><span class="fw-bold text-success fs-5">2.1ug <small class="text-muted">(86%)</small></span></div>
+                        <div class="col-4 col-md-2 text-center px-0">
+                            <span class="fw-bold text-dark text-uppercase tracking-wide px-3 py-1 bg-light rounded-pill border d-inline-block metric-badge">Vitamin B12</span>
+                        </div>
+                        <div class="col-4 col-md-5 text-start"><span class="fw-bold text-muted fs-5">1.3ug <small class="text-muted">(54%)</small></span></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-center py-5 mt-auto border-top">
+        <div class="container">
+            <h4 class="fw-bold mb-3"><i class="bi bi-cup-straw text-success me-2"></i>Vitosoy</h4>
+            <p class="mb-0 text-muted small">&copy; 2023 Vitosoy. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitosoy - The Process</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 1rem 3rem rgba(0,0,0,.08)!important; }
+        .bg-glass { background: rgba(255, 255, 255, 0.85)!important; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    </style>
+</head>
+<body class="bg-white text-dark d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm bg-glass border-bottom border-light">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="index.html">
+                <i class="bi bi-cup-straw text-success me-2"></i>Vitosoy
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active text-success" href="process.html">Process</a></li>
+                    <li class="nav-item"><a class="nav-link" href="showdown.html">Showdown</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 text-center bg-light">
+        <div class="container py-4">
+            <h1 class="display-3 fw-bold mt-4 mb-3" style="letter-spacing: -2px;">How It's Made</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">From the finest soybeans to a refreshing sip, discover the meticulous process that goes into creating every bottle of Vitosoy.</p>
+        </div>
+    </header>
+
+    <section class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row py-5 align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="position-relative hover-lift">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-success rounded-4" style="transform: translate(-15px, 15px); z-index: 0; opacity: 0.1;"></div>
+                        <img src="img/how1.png" alt="Selecting the Best Beans" class="rounded-4 shadow w-100 object-fit-cover bg-light position-relative" style="height: 350px; z-index: 1;">
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center px-md-5">
+                    <div class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2 mb-3 d-inline-block w-auto align-self-start fw-bold">Step 1</div>
+                    <h2 class="fw-bold mb-3 display-6">Selection & Soaking</h2>
+                    <p class="lead text-muted">The journey begins with carefully selecting the highest quality, non-GMO soybeans. These premium beans are then thoroughly cleaned and soaked in pure water, allowing them to soften and prepare for the extraction of their rich nutrients.</p>
+                </div>
+            </div>
+
+            <div class="row py-5 align-items-center flex-md-row-reverse">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="position-relative hover-lift">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary rounded-4" style="transform: translate(15px, 15px); z-index: 0; opacity: 0.1;"></div>
+                        <img src="img/how2.png" alt="Grinding and Extraction" class="rounded-4 shadow w-100 object-fit-cover bg-light position-relative" style="height: 350px; z-index: 1;">
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center px-md-5">
+                    <div class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-2 mb-3 d-inline-block w-auto align-self-start fw-bold">Step 2</div>
+                    <h2 class="fw-bold mb-3 display-6">Grinding & Extraction</h2>
+                    <p class="lead text-muted">Once perfectly soaked, the beans are finely ground with fresh water. This crucial step breaks down the beans to release their natural oils, proteins, and that distinct, creamy soy flavor that forms the foundation of our beverage.</p>
+                </div>
+            </div>
+            
+            <div class="row py-5 align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="position-relative hover-lift">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark rounded-4" style="transform: translate(-15px, 15px); z-index: 0; opacity: 0.1;"></div>
+                        <img src="img/how3.png" alt="Boiling and Filtering" class="rounded-4 shadow w-100 object-fit-cover bg-light position-relative" style="height: 350px; z-index: 1;">
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center px-md-5">
+                    <div class="badge bg-dark bg-opacity-10 text-dark rounded-pill px-3 py-2 mb-3 d-inline-block w-auto align-self-start fw-bold">Step 3</div>
+                    <h2 class="fw-bold mb-3 display-6">Boiling & Filtering</h2>
+                    <p class="lead text-muted">The raw soy extract is then meticulously heated to perfection to ensure safety, enhance digestibility, and refine the taste. Finally, it undergoes a rigorous filtering process to achieve the silky smooth texture that Vitosoy is known for.</p>
+                </div>
+            </div>
+
+            <div class="row py-5 align-items-center flex-md-row-reverse">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="position-relative hover-lift">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-warning rounded-4" style="transform: translate(15px, 15px); z-index: 0; opacity: 0.1;"></div>
+                        <img src="img/how4.png" alt="The Final Product" class="rounded-4 shadow w-100 object-fit-cover bg-light position-relative" style="height: 350px; z-index: 1;">
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center px-md-5">
+                    <div class="badge bg-warning bg-opacity-25 text-warning-emphasis rounded-pill px-3 py-2 mb-3 d-inline-block w-auto align-self-start fw-bold">Step 4</div>
+                    <h2 class="fw-bold mb-3 display-6">The Final Product</h2>
+                    <p class="lead text-muted">Here it is: the finished Vitosoy! The freshly filtered soy milk is perfectly packaged to lock in the flavor, nutrients, and goodness. Ready for you to enjoy a delicious, healthy beverage anytime, anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-center py-5 mt-auto border-top">
+        <div class="container">
+            <h4 class="fw-bold mb-3"><i class="bi bi-cup-straw text-success me-2"></i>Vitosoy</h4>
+            <p class="mb-0 text-muted small">&copy; 2026 Vitosoy. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
